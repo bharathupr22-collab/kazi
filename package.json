@@ -1,0 +1,16 @@
+{
+  "name": "kazi",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Kazi local full-stack development launcher",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "dev:backend": "node scripts/dev.mjs --backend-only",
+    "check:local": "node scripts/dev.mjs --backend-only --check",
+    "test:mongo": "node scripts/dev.mjs --backend-only --test-mongo"
+  },
+  "dependencies": {
+    "mongodb-memory-server-core": "11.3.0"
+  }
+}
